@@ -1,0 +1,36 @@
+{
+  "name": "@fabric/webhooks",
+  "version": "0.1.0",
+  "description": "Receive WebHooks within a Fabric service",
+  "main": "services/webhooks.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martindale/fabric-webhooks.git"
+  },
+  "keywords": [
+    "fabric",
+    "maki",
+    "bitcoin",
+    "lightning",
+    "webhooks",
+    "web",
+    "http",
+    "microservices"
+  ],
+  "author": "Fabric Labs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/martindale/fabric-webhooks/issues"
+  },
+  "homepage": "https://github.com/martindale/fabric-webhooks#readme",
+  "dependencies": {
+    "@fabric/core": "github:FabricLabs/fabric#master",
+    "@fabric/http": "github:FabricLabs/fabric-http#master"
+  }
+}
