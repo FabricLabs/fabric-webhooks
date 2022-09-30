@@ -1,5 +1,6 @@
 'use strict';
 
+// Dependencies
 const Service = require('@fabric/core/types/service');
 const HTTPServer = require('@fabric/http/types/server');
 const handleState = require('../contracts/handleState');

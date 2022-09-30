@@ -7,6 +7,10 @@
     "test": "tests"
   },
   "scripts": {
+    "coverage": "c8 npm test",
+    "make:coverage": "npm run coverage && c8 report --reporter html",
+    "report:coverage": "npm run make:coverage && c8 report --reporter=text-lcov > reports/coverage.lcov",
+    "review:coverage": "npm run make:coverage && fabric-http -p 8000 reports/coverage",
     "test": "mocha tests"
   },
   "repository": {
@@ -30,7 +34,10 @@
   },
   "homepage": "https://github.com/martindale/fabric-webhooks#readme",
   "dependencies": {
-    "@fabric/core": "github:FabricLabs/fabric#master",
-    "@fabric/http": "github:FabricLabs/fabric-http#master"
+    "@fabric/core": "FabricLabs/fabric#master",
+    "@fabric/http": "FabricLabs/fabric-http#master"
+  },
+  "devDependencies": {
+    "c8": "^7.12.0"
   }
 }
