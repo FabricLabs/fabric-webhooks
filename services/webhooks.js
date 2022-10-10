@@ -17,6 +17,11 @@ class WebHooks extends Service {
         'test': handleState.bind({ state })
       },
       http: {},
+      resources: {
+        'Hooks': {
+          path: '/hooks'
+        }
+      },
       state: {}
     }, this.settings, settings);
 
